@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * jack_bauer - Time
- * Return: Void
  */
 void jack_bauer(void)
 {
@@ -40,5 +39,4 @@ void jack_bauer(void)
 		}
 		h2++;
 	}
-	return;
 }
