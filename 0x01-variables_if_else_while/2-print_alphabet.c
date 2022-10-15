@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main(void)
 {
     /* declare alphabet variable */
@@ -10,9 +9,7 @@ int main(void)
     {
         /* print the value of the variable */
         putchar(alphabet);
-
     }
-
     putchar('\n');
     return (0);
 }
