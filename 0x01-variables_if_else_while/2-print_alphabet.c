@@ -1,16 +1,18 @@
 #include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success/correct)
+ */
 int main(void)
 {
-    /* declare alphabet variable */
-    char alphabet;
+	char alphabets;
 
-    /* loop through the letters of the alphabet */
-    for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
-    {
-        /* print the value of the variable */
-        putchar(alphabet);
-    }
-    putchar('\n');
-    return (0);
+	for (alphabets = 'a'; alphabets <= 'z'; alphabets++)
+	{
+		putchar(alphabets);
+	}
+	putchar('\n');
+	return (0);
 }
-
