@@ -2,13 +2,13 @@
 
 int main(void)
 {
-    //declare alphabet variable
+    /* declare alphabet variable */
     char alphabet;
 
-    //loop through the letters of the alphabet
+    /* loop through the letters of the alphabet */
     for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
     {
-        // print the value of the variable 
+        /* print the value of the variable */
         putchar(alphabet);
 
     }
