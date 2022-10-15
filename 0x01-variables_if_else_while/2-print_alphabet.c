@@ -1,19 +1,19 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success/correct)
- */
 int main(void)
 {
-char i;
+    //declare alphabet variable
+    char alphabet;
 
-for (i = a; i <= z; i++)
-{
-putchar(i);
-}
-putchar(n);
-return (0);
+    //loop through the letters of the alphabet
+    for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
+    {
+        // print the value of the variable 
+        putchar(alphabet);
+
+    }
+
+    putchar('\n');
+    return (0);
 }
 
