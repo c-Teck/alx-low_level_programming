@@ -7,18 +7,18 @@
  * Return: number of digits
  */
 
-int numLength(int num)
+int numLength(int number)
 {
 	int length = 0;
 
-	if (!num)
+	if (!number)
 	{
 		return (1);
 	}
 
-	while (num)
+	while (number)
 	{
-		num = num / 10;
+		number = number / 10;
 		length += 1;
 	}
 
@@ -26,7 +26,7 @@ int numLength(int num)
 }
 /**
  *  *main - prints the first 98 fibonaci sequences
- *  Return: 0
+ *  Return: 0 (success)
  */
 
 int main(void)
