@@ -3,7 +3,7 @@
 
 /**
  * numLength - returns the lenth of string
- * @num : operand number
+ * @number : operand number
  * Return: number of digits
  */
 
