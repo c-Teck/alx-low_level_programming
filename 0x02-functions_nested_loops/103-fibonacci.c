@@ -1,26 +1,39 @@
 #include <stdio.h>
+
 /**
  * main - fibonacci
- * Return: Always 0 (Success)
+ * Description: Print the first 50 fibonacci numbers, starting with 1 and 2.
+ * Numbers must be coma and space separated.
+ * Return: 0(Sucess)
  */
+
 int main(void)
 {
-	int n = 1;
-	int f = 1, s = 2, nxt;
+    int count = 3; /* this is so because the first 2 members have been given already. My loop will therefore begin from the 3rd one */
 
-	while (n < 50)
-	{
-		if (n == 1)
-		{
-			f = 1;
-			printf("%i, ", f);
-		}
-		nxt = f + s;
-		printf("%i, ", nxt);
-		f = s;
-		s = nxt;
-		n++;
-	}
-	printf("\n");
-	return (0);
+    int first = 1, second = 2;
+    int next = first + second;
+
+    while (count <= 50)
+    {
+        /* Let's check if we are at the end of the list, if we are close with a new line */
+        if (count == 50)
+        {
+            printf("%lu \n", next);
+         }
+         else  /* if we are not at the end of the list, add a comma after the number */
+         { 
+           printf("%lu, ", next); 
+         }
+
+        /* Reset the variables to get the next number */
+        first = second;
+        second = next;
+
+        /* after resetting the variables, you need to find the next number */
+        next = first + second; 
+        count++;
+    }
+
+    return (0);
 }
